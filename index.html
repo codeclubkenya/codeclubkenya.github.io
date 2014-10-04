@@ -1,12 +1,696 @@
-<!DOCTYPE html>
+
 <html>
-<body>
-<h1>Hello World</h1>
-<p>
-Our mission
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-The mission of Code Club Australia is to give every child in Australia the chance to learn to code by providing project materials and a volunteering framework that supports the running of after-school coding clubs.
+    <title>Code Club Australia</title>
+    <meta name="description" content="A worldwide network of coding clubs for children aged 9–11">
+    <meta name="google-translate-customization" content="83c9faadaa4cd85f-d73aecb92e0536d8-g50cb1fa5a9c14532-15" />
 
-I'm hosted with GitHub Pages.</p>
+    <meta property="og:url" content="http://www.codeclubworld.org/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Code Club World">
+<meta property="og:site_name" content="Code Club World">
+<meta property="og:description" content="A worldwide network of coding clubs for children aged 9–11">
+<meta property="og:image" content="http://www.codeclubworld.org/img/og.png">
+
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.min.js"></script>
+    <![endif]-->
+
+  <!--  <script>
+      document.write(
+        '<link rel="stylesheet" ' +
+        'href="//f.fontdeck.com/s/css/TFY2aUzEpRLcoEOhQR+42J6Ja8I/' +
+        location.hostname +
+        '/23203.css">'
+      );
+    </script>-->
+
+     <!-- NOTE: fonts do not work properly as they rely on the line below to fetch from fontdeck. Forbidden error is returned, meaning insufficient authentication. Hong Kong site currently has this issue too -->
+
+<link href="http://f.fontdeck.com/s/css/TFY2aUzEpRLcoEOhQR+42J6Ja8I/www.codeclub.org.uk/23203.css" media="screen" rel="stylesheet" type="text/css" />
+
+<link href="assets/application-e78bfefef0baeee9ec866242060b9e3a.css" media="all" rel="stylesheet" type="text/css" />
+
+<script src="https://checkout.stripe.com/v2/checkout.js" type="text/javascript"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js" type="text/javascript"></script>
+<script src="assets/application-f6225e0cd9e791d7e7d4264855c3690f.js" type="text/javascript"></script>
+<script>
+  CodeClub.STRIPE_KEY = 'pk_live_fs3tLiItaG1L4EV2UXElRQkM';
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30750176-1']);
+  _gaq.push(['_setDomainName', 'codeclub.org.uk']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+    <link rel="stylesheet" href="http://www.codeclub.org.uk/assets/application.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  </head>
+  <body class="home">
+
+    <div class="row">
+      <div class="twelve columns">
+
+        <header class="row header" role="banner">
+          <nav class="twelve columns navigation" role="navigation" id="nav">
+            <ul class="main-menu">
+              <li class="active">
+                <a href="">Home</a>
+              </li>
+              <li >
+                <a href="about">About</a>
+              </li>
+              <li>
+                <a href="start-a-club">Start a club</a>
+              </li>
+              <!-- <li >
+                <a href="../advice/creating-a-club.html">Start A Club</a>
+              </li> -->
+              <li >
+                <a href="faq">FAQ</a>
+              </li>
+              <li>
+                <a href="support-us">Support Us</a>
+              </li>
+              <li>
+                <a href="contact-us">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <hgroup class="twelve columns">
+            <h1 id="logo">
+              <a href="">
+              <img src="img/logo.png"
+                   alt="Code Club Australia"
+                   onerror="this.onerror=null; this.src='img/logo.png'"
+                   id="logo"
+                   width="260">
+              </a>
+            </h1>
+            <h2 class="nine centered columns">A network of coding clubs in Australia for children aged 9–11.</h2>
+          </hgroup>
+        </header>
+
+        <div id="translate">
+          <div id="google_translate_element"></div>
+          <script>
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+          }
+          </script>
+          <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+
+      </div>
+    </div>
+
+<div class="row">
+  <div class="twelve columns"><hr></div>
+</div>
+
+
+<div class="row introduction">
+  <div class="seven columns">
+    <h2>Our mission</h2>
+
+    <p><b>The mission of Code Club Australia</b> is to give every child in Australia the chance to learn to code by providing project materials and a volunteering framework that supports the running of after-school coding clubs.</p>
+
+    <p>Code Club Australia is part of the <a href="http://www.codeclubworld.org">Code Club World</a> network.</p>
+  </div>
+  <div class="five columns">
+    <h2>Support us</h2>
+    <p>We need your support to help grow Code Club Australia.</p>
+    <p><a href="support-us" class="button primary round">Support us</a></p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="twelve columns"><hr></div>
+</div>
+
+<div class="row how-it-works">
+  <div class="twelve columns">
+
+    <div class="row">
+      <div class="ten columns">
+        <h2>How to create a club</h2>
+        <p>We create projects for our volunteers to teach at after school coding clubs. The projects we make teach children how to program by showing them how to make computer games, animations and websites. Volunteers go to their local junior school or other venue, such as a library, for an hour a week and teach one project a week. Check out the languages below and register your club.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="bit">
+        <div class="image">
+          <img src="img/club-steps/1.png">
+        </div>
+        <h4>Volunteer</h4>
+      </div>
+      <div class="bit">
+        <div class="image">
+          <img src="img/club-steps/2.png">
+        </div>
+        <h4>Projects</h4>
+      </div>
+      <div class="bit">
+        <div class="image">
+          <img src="img/club-steps/3.png">
+        </div>
+        <h4>Venue</h4>
+      </div>
+      <div class="bit">
+        <div class="image">
+          <img src="img/club-steps/4.png">
+        </div>
+        <h4>Children</h4>
+      </div>
+      <div class="bit">
+        <img src="img/logo-150x150.png">
+        <p><a href="about" class="button secondary round">Find out more</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="twelve columns"><hr></div>
+</div>
+
+<div class="row">
+  <div class="twelve columns">
+
+    <div class="white panel map-wrapper">
+      <div class="row">
+        <div class="ten columns club-count">
+          <h2><span class="counter"></span> <span class="counter-after">Code Clubs worldwide!</span></h2>
+        </div>
+        <div class="two columns start-club">
+          <a class="button primary round" href="start-a-club">Start Club</a>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+
+    <!-- <div class="panel" id="register">
+
+      <form novalidate>
+
+        <div class="row">
+          <div class="twelve columns">
+            <h3>Register your Australian Code Club and join the movement!</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="nine columns">
+            <div class="row">
+
+              <div class="six columns">
+                <div class="custom-placeholder required">
+                  <label for="venue[name]">Venue name</label>
+                  <input class="medium input-text" name="venue[name]" id="venue[name]" type="text" data-trigger="change" required="required">
+                </div>
+
+                <div class="custom-placeholder">
+                  <label>Venue website</label>
+                  <input class="medium input-text" type="text" name="venue[website]" data-trigger="change">
+                </div>
+
+                <p>The venue website will be shown on the map marker</p>
+
+                <br class="separator">
+
+                <div class="custom-placeholder required">
+                  <label for="venue[address_1]">Venue address 1</label>
+                  <input class="medium input-text" name="venue[address_1]" id="venue[address_1]" type="text" data-trigger="change" required="required">
+                </div>
+
+                <div class="custom-placeholder">
+                  <label for="venue[address_2]">Venue address 2</label>
+                  <input class="medium input-text" name="venue[address_2]" id="venue[address_2]" type="text">
+                </div>
+
+                <div class="custom-placeholder">
+                  <label for="venue[region]">Venue region</label>
+                  <input class="medium input-text" name="venue[region]" id="venue[region]" type="text">
+                </div>
+
+                <div class="custom-placeholder">
+                  <label for="venue[city]">Venue city</label>
+                  <input class="medium input-text" name="venue[city]" id="venue[city]" type="text">
+                </div>
+
+                <div class="custom-placeholder">
+                  <label for="venue[postcode]">Venue postcode</label>
+                  <input class="medium input-text" type="text" name="venue[postcode]" id="venue[postcode]" data-trigger="change">
+                </div>
+
+                <p>The venue address will NOT be shown on the map marker and is just used to place the venue on the map.</p>
+
+                <br class="separator">
+
+                <div class="custom-placeholder required">
+                  <label>Country</label>
+                  <select
+  autocomplete="off"
+  class="medium input-text"
+  name="country[code]"
+  data-trigger="change"
+  required="required"
+  style="visibility:hidden">
+  <option value="AU">Australia</option>
+  <option value="AF">Afghanistan</option>
+  <option value="AX">Åland Islands</option>
+  <option value="AL">Albania</option>
+  <option value="DZ">Algeria</option>
+  <option value="AS">American Samoa</option>
+  <option value="AD">Andorra</option>
+  <option value="AO">Angola</option>
+  <option value="AI">Anguilla</option>
+  <option value="AQ">Antarctica</option>
+  <option value="AG">Antigua and Barbuda</option>
+  <option value="AR">Argentina</option>
+  <option value="AM">Armenia</option>
+  <option value="AW">Aruba</option>
+  <option value="AU">Australia</option>
+  <option value="AT">Austria</option>
+  <option value="AZ">Azerbaijan</option>
+  <option value="BS">Bahamas</option>
+  <option value="BH">Bahrain</option>
+  <option value="BD">Bangladesh</option>
+  <option value="BB">Barbados</option>
+  <option value="BY">Belarus</option>
+  <option value="BE">Belgium</option>
+  <option value="BZ">Belize</option>
+  <option value="BJ">Benin</option>
+  <option value="BM">Bermuda</option>
+  <option value="BT">Bhutan</option>
+  <option value="BO">Bolivia, Plurinational State of</option>
+  <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+  <option value="BA">Bosnia and Herzegovina</option>
+  <option value="BW">Botswana</option>
+  <option value="BV">Bouvet Island</option>
+  <option value="BR">Brazil</option>
+  <option value="IO">British Indian Ocean Territory</option>
+  <option value="BN">Brunei Darussalam</option>
+  <option value="BG">Bulgaria</option>
+  <option value="BF">Burkina Faso</option>
+  <option value="BI">Burundi</option>
+  <option value="KH">Cambodia</option>
+  <option value="CM">Cameroon</option>
+  <option value="CA">Canada</option>
+  <option value="CV">Cape Verde</option>
+  <option value="KY">Cayman Islands</option>
+  <option value="CF">Central African Republic</option>
+  <option value="TD">Chad</option>
+  <option value="CL">Chile</option>
+  <option value="CN">China</option>
+  <option value="CX">Christmas Island</option>
+  <option value="CC">Cocos (Keeling) Islands</option>
+  <option value="CO">Colombia</option>
+  <option value="KM">Comoros</option>
+  <option value="CG">Congo</option>
+  <option value="CD">Congo, the Democratic Republic of the</option>
+  <option value="CK">Cook Islands</option>
+  <option value="CR">Costa Rica</option>
+  <option value="CI">Côte d'Ivoire</option>
+  <option value="HR">Croatia</option>
+  <option value="CU">Cuba</option>
+  <option value="CW">Curaçao</option>
+  <option value="CY">Cyprus</option>
+  <option value="CZ">Czech Republic</option>
+  <option value="DK">Denmark</option>
+  <option value="DJ">Djibouti</option>
+  <option value="DM">Dominica</option>
+  <option value="DO">Dominican Republic</option>
+  <option value="EC">Ecuador</option>
+  <option value="EG">Egypt</option>
+  <option value="SV">El Salvador</option>
+  <option value="GQ">Equatorial Guinea</option>
+  <option value="ER">Eritrea</option>
+  <option value="EE">Estonia</option>
+  <option value="ET">Ethiopia</option>
+  <option value="FK">Falkland Islands (Malvinas)</option>
+  <option value="FO">Faroe Islands</option>
+  <option value="FJ">Fiji</option>
+  <option value="FI">Finland</option>
+  <option value="FR">France</option>
+  <option value="GF">French Guiana</option>
+  <option value="PF">French Polynesia</option>
+  <option value="TF">French Southern Territories</option>
+  <option value="GA">Gabon</option>
+  <option value="GM">Gambia</option>
+  <option value="GE">Georgia</option>
+  <option value="DE">Germany</option>
+  <option value="GH">Ghana</option>
+  <option value="GI">Gibraltar</option>
+  <option value="GR">Greece</option>
+  <option value="GL">Greenland</option>
+  <option value="GD">Grenada</option>
+  <option value="GP">Guadeloupe</option>
+  <option value="GU">Guam</option>
+  <option value="GT">Guatemala</option>
+  <option value="GG">Guernsey</option>
+  <option value="GN">Guinea</option>
+  <option value="GW">Guinea-Bissau</option>
+  <option value="GY">Guyana</option>
+  <option value="HT">Haiti</option>
+  <option value="HM">Heard Island and McDonald Islands</option>
+  <option value="VA">Holy See (Vatican City State)</option>
+  <option value="HN">Honduras</option>
+  <option value="HK">Hong Kong</option>
+  <option value="HU">Hungary</option>
+  <option value="IS">Iceland</option>
+  <option value="IN">India</option>
+  <option value="ID">Indonesia</option>
+  <option value="IR">Iran, Islamic Republic of</option>
+  <option value="IQ">Iraq</option>
+  <option value="IE">Ireland</option>
+  <option value="IM">Isle of Man</option>
+  <option value="IL">Israel</option>
+  <option value="IT">Italy</option>
+  <option value="JM">Jamaica</option>
+  <option value="JP">Japan</option>
+  <option value="JE">Jersey</option>
+  <option value="JO">Jordan</option>
+  <option value="KZ">Kazakhstan</option>
+  <option value="KE">Kenya</option>
+  <option value="KI">Kiribati</option>
+  <option value="KP">Korea, Democratic People's Republic of</option>
+  <option value="KR">Korea, Republic of</option>
+  <option value="KW">Kuwait</option>
+  <option value="KG">Kyrgyzstan</option>
+  <option value="LA">Lao People's Democratic Republic</option>
+  <option value="LV">Latvia</option>
+  <option value="LB">Lebanon</option>
+  <option value="LS">Lesotho</option>
+  <option value="LR">Liberia</option>
+  <option value="LY">Libya</option>
+  <option value="LI">Liechtenstein</option>
+  <option value="LT">Lithuania</option>
+  <option value="LU">Luxembourg</option>
+  <option value="MO">Macao</option>
+  <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+  <option value="MG">Madagascar</option>
+  <option value="MW">Malawi</option>
+  <option value="MY">Malaysia</option>
+  <option value="MV">Maldives</option>
+  <option value="ML">Mali</option>
+  <option value="MT">Malta</option>
+  <option value="MH">Marshall Islands</option>
+  <option value="MQ">Martinique</option>
+  <option value="MR">Mauritania</option>
+  <option value="MU">Mauritius</option>
+  <option value="YT">Mayotte</option>
+  <option value="MX">Mexico</option>
+  <option value="FM">Micronesia, Federated States of</option>
+  <option value="MD">Moldova, Republic of</option>
+  <option value="MC">Monaco</option>
+  <option value="MN">Mongolia</option>
+  <option value="ME">Montenegro</option>
+  <option value="MS">Montserrat</option>
+  <option value="MA">Morocco</option>
+  <option value="MZ">Mozambique</option>
+  <option value="MM">Myanmar</option>
+  <option value="NA">Namibia</option>
+  <option value="NR">Nauru</option>
+  <option value="NP">Nepal</option>
+  <option value="NL">Netherlands</option>
+  <option value="NC">New Caledonia</option>
+  <option value="NZ">New Zealand</option>
+  <option value="NI">Nicaragua</option>
+  <option value="NE">Niger</option>
+  <option value="NG">Nigeria</option>
+  <option value="NU">Niue</option>
+  <option value="NF">Norfolk Island</option>
+  <option value="MP">Northern Mariana Islands</option>
+  <option value="NO">Norway</option>
+  <option value="OM">Oman</option>
+  <option value="PK">Pakistan</option>
+  <option value="PW">Palau</option>
+  <option value="PS">Palestinian Territory, Occupied</option>
+  <option value="PA">Panama</option>
+  <option value="PG">Papua New Guinea</option>
+  <option value="PY">Paraguay</option>
+  <option value="PE">Peru</option>
+  <option value="PH">Philippines</option>
+  <option value="PN">Pitcairn</option>
+  <option value="PL">Poland</option>
+  <option value="PT">Portugal</option>
+  <option value="PR">Puerto Rico</option>
+  <option value="QA">Qatar</option>
+  <option value="RE">Réunion</option>
+  <option value="RO">Romania</option>
+  <option value="RU">Russian Federation</option>
+  <option value="RW">Rwanda</option>
+  <option value="BL">Saint Barthélemy</option>
+  <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+  <option value="KN">Saint Kitts and Nevis</option>
+  <option value="LC">Saint Lucia</option>
+  <option value="MF">Saint Martin (French part)</option>
+  <option value="PM">Saint Pierre and Miquelon</option>
+  <option value="VC">Saint Vincent and the Grenadines</option>
+  <option value="WS">Samoa</option>
+  <option value="SM">San Marino</option>
+  <option value="ST">Sao Tome and Principe</option>
+  <option value="SA">Saudi Arabia</option>
+  <option value="SN">Senegal</option>
+  <option value="RS">Serbia</option>
+  <option value="SC">Seychelles</option>
+  <option value="SL">Sierra Leone</option>
+  <option value="SG">Singapore</option>
+  <option value="SX">Sint Maarten (Dutch part)</option>
+  <option value="SK">Slovakia</option>
+  <option value="SI">Slovenia</option>
+  <option value="SB">Solomon Islands</option>
+  <option value="SO">Somalia</option>
+  <option value="ZA">South Africa</option>
+  <option value="GS">South Georgia and the South Sandwich Islands</option>
+  <option value="SS">South Sudan</option>
+  <option value="ES">Spain</option>
+  <option value="LK">Sri Lanka</option>
+  <option value="SD">Sudan</option>
+  <option value="SR">Suriname</option>
+  <option value="SJ">Svalbard and Jan Mayen</option>
+  <option value="SZ">Swaziland</option>
+  <option value="SE">Sweden</option>
+  <option value="CH">Switzerland</option>
+  <option value="SY">Syrian Arab Republic</option>
+  <option value="TW">Taiwan, Province of China</option>
+  <option value="TJ">Tajikistan</option>
+  <option value="TZ">Tanzania, United Republic of</option>
+  <option value="TH">Thailand</option>
+  <option value="TL">Timor-Leste</option>
+  <option value="TG">Togo</option>
+  <option value="TK">Tokelau</option>
+  <option value="TO">Tonga</option>
+  <option value="TT">Trinidad and Tobago</option>
+  <option value="TN">Tunisia</option>
+  <option value="TR">Turkey</option>
+  <option value="TM">Turkmenistan</option>
+  <option value="TC">Turks and Caicos Islands</option>
+  <option value="TV">Tuvalu</option>
+  <option value="UG">Uganda</option>
+  <option value="UA">Ukraine</option>
+  <option value="AE">United Arab Emirates</option>
+  <option value="GB">United Kingdom</option>
+  <option value="US">United States</option>
+  <option value="UM">United States Minor Outlying Islands</option>
+  <option value="UY">Uruguay</option>
+  <option value="UZ">Uzbekistan</option>
+  <option value="VU">Vanuatu</option>
+  <option value="VE">Venezuela, Bolivarian Republic of</option>
+  <option value="VN">Viet Nam</option>
+  <option value="VG">Virgin Islands, British</option>
+  <option value="VI">Virgin Islands, U.S.</option>
+  <option value="WF">Wallis and Futuna</option>
+  <option value="EH">Western Sahara</option>
+  <option value="YE">Yemen</option>
+  <option value="ZM">Zambia</option>
+  <option value="ZW">Zimbabwe</option>
+</select>
+                </div>
+              </div>
+
+              <div class="six columns">
+                <div class="custom-placeholder required">
+                  <label for="contact[name]">Your name</label>
+                  <input class="medium input-text" type="text" name="contact[name]" id="contact[name]" data-trigger="change" required="required">
+                </div>
+
+                <div class="custom-placeholder required">
+                  <label for="contact[email]">Your email address</label>
+                  <input class="medium input-text input-email" type="email" name="contact[email]" id="contact[email]" data-trigger="change" required="required">
+                </div>
+
+                <p class="mini-notice">Your name and email address will not be displayed</p>
+
+                <div class="custom-placeholder">
+                  <label for="contact[skype]">Club skype name</label>
+                  <input class="medium input-text" type="text" name="contact[skype]" id="contact[skype]">
+                </div>
+
+                <p>Set up a club Skype name so you can chat to other clubs. It will be displayed on your map marker</p>
+
+                <label id="terms-and-conditions">
+                  <input type="checkbox" name="contact[agreed]" value="1" required="required" data-error-message="You must agree to the terms and conditions to continue.">
+                  <strong>I have read and agreed to the <a href="http://codeclub-assets.s3.amazonaws.com/public/CodeClubWorld-Terms-of-Service-v1-clean.pdf">terms and conditions</a></strong>
+                </label>
+
+                <button type="submit" class="button primary round" id="create-a-club">Create a club</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="three columns">
+            <p><strong>Why register?</strong></p>
+            <p>When you register your club you can download the certificates, door sign and badge templates to make your club complete.</p>
+
+            <img src="img/robots/giddy.png" class="giddy" />
+          </div>
+        </div>
+
+      </form>
+
+    </div> -->
+      <hr>
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="seven columns">
+    <h2>Teaching materials</h2>
+
+    <p>We write a new set of projects every school term. Each term the students will progress and learn more whilst at the same time using their imaginations and making creative projects. Terms 1 & 2 will use Scratch to teach the basics of programming. Term 3 will teach the basics of web development using HTML and CSS. Term 4 will teach Python and so on. We'll put these materials on GitHub for you to translate and share.</p>
+    <br>
+    <p>Code Club World will provide all of the Code Club materials in plaintext form - and we need you to use Github and translate them into your own language. Work together on this and it will be done in no time at all. You'll notice that the materials have not been designed, they are just in markdown. If you want your country's materials designed you'll need to find a designer to do this for you.</p>
+    <p><a href="http://projects.codeclubworld.org/en-GB/" class="button secondary round">Explore projects</a></p>
+  </div>
+</div>
+
+</div>
+<footer class="footer" role="contentinfo">
+      <div class="row"><hr></div>
+
+      <div class="row">
+
+        <div class="three columns">
+          <div class="wrap">
+            <h4>Donate</h4>
+
+            <img src="img/money.png" />
+
+            <p>
+              Dig as deep as you can and help us grow Code Club
+            </p>
+
+            <a class="button secondary round" href="support-us">Donate</a>
+          </div>
+        </div>
+
+        <div class="three columns">
+          <div class="wrap">
+            <h4>Shop</h4>
+
+            <img src="img/shirts.png" />
+
+            <p>
+              Kids and adults - Look amazing and clever in our Code Club T-shirts, hoodies and bags
+            </p>
+
+            <a class="button secondary round" href="">Buy a t-shirt</a>
+          </div>
+        </div>
+
+        <div class="three columns">
+          <div class="wrap">
+            <h4>Mailing list</h4>
+
+            <img src="img/mailing-list.png" />
+
+            <p>
+              Keep up to date with the latest news from Code Club Australia
+            </p>
+
+            <a class="button secondary round" href="">Sign up to the mailing list</a>
+          </div>
+        </div>
+
+        <div class="three columns">
+          <div class="row">
+            <div class="twelve columns">
+              <div class="wrap">
+                <a href="https://twitter.com/CodeClubAus" class="social-link">
+                  <img alt="Twitter" height="35" src="http://www.codeclub.org.uk/system/files/032013/514af7939d200f0f4000001a/icon/twitter.png" width="35"> Twitter
+                </a><!--
+                <a href="https://www.facebook.com/CodeClubHK" class="social-link">
+                  <img alt="Facebook" height="35" src="http://www.codeclub.org.uk/system/files/032013/514af7919d200f0f300000c0/icon/facebook.png" width="35"> Facebook
+                </a>-->
+                 <a href="http://blog.codeclubau.org" class="social-link">
+                  <img alt="Blog" height="35" width="35" src="img/blogger_icon.png"> Blog
+                </a> 
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="twelve columns">
+              <div class="wrap">
+                <p class="useful-links">
+                  Useful links<br>
+                  <a href="http://scratch.mit.edu/scratch_1.4/" target="_blank">Download Scratch 1.4</a><br>
+                  <a href="https://github.com/codeclub" target="_blank">Code Club World on Github</a><br>
+                  <a href="http://codeclub-assets.s3.amazonaws.com/public/CodeClubWorld-Terms-of-Service-v1-clean.pdf" target="_blank">Terms of Service</a><br>
+                  <a href="http://codeclubworld.org/" target="_blank">Code Club World</a><br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="row">
+        <p class="legal">
+          Code Club Australia is part of <a href="http://codeclubworld.org/" target="_blank">Code Club World</a> Ltd - a not-for-profit organisation with the aim of giving children the chance to learn to code.<br>
+          Registered UK Company No. 08140247 &copy; 2013<br>
+          CodeClubAU is proudly built by <a href="http://www.vivant.com.au">Vivant</a>, in support of bringing proper development resources to students all around Australia.<br>
+          Illustrations by <a href="http://www.timothywinchester.com/">Timothy Winchester</a> and used with his kind permission.
+          Code Club World site built by <a href="http://withassociates.com">With Associates</a>.
+          API built by Phil Howell</a>.
+          Powered by <a href="https://github.com/himynamesdave/codeclubhk">Github</a>.
+        </p>
+      </div>
+    </footer>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/parsley.js/1.1.16/parsley.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="js/libs/infobox.js"></script>
+    <script src="js/libs/jquery.serialize-hash.js"></script>
+    <script src="js/libs/marker-clusterer.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
