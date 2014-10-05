@@ -23,14 +23,14 @@ CodeClubWorld.makeMap = function() {
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
-      var plClubsCounter = 0;
+      var keClubsCounter = 0;
 
     $.each(clubs, function(i, club) {
       var loc = club.venue.location;
         var countryCode = club.venue.country.code;
 
-        if (countryCode == 'PL') {
-            plClubsCounter++;
+        if (countryCode == 'KE') {
+            keClubsCounter++;
         }
 
       if (!loc) return;
@@ -90,7 +90,7 @@ CodeClubWorld.makeMap = function() {
       });
     });
 
-    $('.counter').text(plClubsCounter);
+    $('.counter').text(keClubsCounter);
 
     var mcOptions = {
       gridSize: 30,
