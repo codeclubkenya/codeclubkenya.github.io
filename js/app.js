@@ -27,11 +27,13 @@ CodeClubWorld.makeMap = function() {
 
     $.each(clubs, function(i, club) {
       var loc = club.venue.location;
-        var countryCode = club.venue.country.code;
 
-        if (countryCode == 'KE') {
-            keClubsCounter++;
-        }
+// retrieving the number of clubs in Kenya does not work
+        //var countryCode = club.venue.country.code;
+
+        //if (countryCode == 'KE') {
+        //    keClubsCounter++;
+      //  }
 
       if (!loc) return;
 
@@ -90,10 +92,14 @@ CodeClubWorld.makeMap = function() {
       });
     });
 
-    $('.counter').text(keClubsCounter);
+    // keClubsCounter does not work, so use the normal one
+    //$('.counter').text(keClubsCounter);
+	$('.counter').append(clubs.length);
 
     var mcOptions = {
-      gridSize: 30,
+
+      // gridSize: 30, // this seems not use it in normal one
+
       styles: [{
         textColor: 'white',
         url: '/img/map/cluster.png',
