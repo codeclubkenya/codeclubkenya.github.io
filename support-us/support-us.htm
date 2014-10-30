@@ -103,38 +103,55 @@
   </div>
 </div>
 
-<div class="slice donate">
+
+        <div class="slice donate">
   <div class="boxes row">
-    <div class="three columns morepanel">
-      <div class="wrap">
-        <p><img src="../img/robots/support-robot-one.jpg" width="224" height="142"></p>
-        <strong>Sh200</strong>
-        <a class="button round primary" href="https://gocardless.com/pay/R5075AHN" target="_blank">Donate</a>
-      </div>
-    </div>
-    <div class="three columns morepanel">
-      <div class="wrap">
-        <p><img src="../img/robots/support-robot-three.jpg" width="224" height="142"></p>
-        <strong>Sh500</strong>
-        <a class="button round primary" href="https://gocardless.com/pay/2TC9BCMR" target="_blank">Donate</a>
-      </div>
-    </div>
-    <div class="three columns morepanel">
-      <div class="wrap">
-        <p><img src="../img/robots/support-robot-lots.jpg" width="224" height="142"></p>
-        <strong>Sh1000</strong>
-        <a class="button round primary" href="https://gocardless.com/pay/2M8XAYWR" target="_blank">Donate</a>
-      </div>
-    </div>
-    <div class="three columns morepanel">
-      <div class="wrap">
-        <p><img src="../img/robots/support-robot-any-amount.jpg" width="224" height="142"></p>
-        <strong>Any amount</strong>
-        <a class="button round primary" href="https://gocardless.com/pay/Y1NN3GVC" target="_blank">Donate</a>
-      </div>
-    </div>
+      <form accept-charset="UTF-8" action="/charges" class="three columns morepanel stripe-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="rmFKjEyQGPqgTJBfb296u3L226RlcqrZIoL7eUNrIJA=" /></div>
+  <div class="wrap">
+    <p><img alt="1child" height="142" src="../img/robots/support-robot-one.jpg" width="224" /></p>
+
+    <strong> Sh200 </strong>
+
+    <button type="submit" class="button round primary">Donate</button>
+  </div>
+</form>
+
+      <form accept-charset="UTF-8" action="/charges" class="three columns morepanel stripe-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="rmFKjEyQGPqgTJBfb296u3L226RlcqrZIoL7eUNrIJA=" /></div>
+  <div class="wrap">
+    <p><img src="../img/robots/support-robot-three.jpg" height="142" width="224" /></p>
+
+    <strong> Sh500 </strong>
+
+    <button type="submit" class="button round primary">Donate</button>
+  </div>
+</form>
+
+      <form accept-charset="UTF-8" action="/charges" class="three columns morepanel stripe-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="rmFKjEyQGPqgTJBfb296u3L226RlcqrZIoL7eUNrIJA=" /></div>
+  <div class="wrap">
+    <p><img src="../img/robots/support-robot-lots.jpg" width="224" height="142" height="142" width="224" /></p>
+
+    <strong> Sh1000 </strong>
+
+    <button type="submit" class="button round primary">Donate</button>
+  </div>
+</form>
+
+      <form accept-charset="UTF-8" action="/charges" class="three columns morepanel stripe-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="rmFKjEyQGPqgTJBfb296u3L226RlcqrZIoL7eUNrIJA=" /></div>
+  <div class="wrap">
+    <p><img height="142" src="../img/robots/support-robot-any-amount.jpg"  width="224" /></p>
+
+    <strong>
+        Sh<input id="amount" name="amount" type="text" />
+    </strong>
+
+    <button type="submit" class="button round primary">Donate</button>
+  </div>
+</form>
+
   </div>
 </div>
+
+
   <footer class="footer" role="contentinfo">
       <div class="row"><hr></div>
 
