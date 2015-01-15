@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Code Club Kenya | Support Us</title>
+    <title>Code Club Kenya | Contact Us</title>
     <meta name="description" content="A worldwide network of coding clubs for primary school pupils">
     <meta name="google-translate-customization" content="83c9faadaa4cd85f-d73aecb92e0536d8-g50cb1fa5a9c14532-15" />
 
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Code Club World">
 <meta property="og:site_name" content="Code Club World">
-<meta property="og:description" content="A worldwide network of coding clubs for primary school pupils">
+<meta property="og:description" content="A worldwide network of coding clubs for Primary school pupils">
 <meta property="og:image" content="http://www.codeclubworld.org/img/og.png">
 
 <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
@@ -40,7 +40,7 @@
       <div class="twelve columns">
 
         <header class="row header" role="banner">
-
+         
 <nav class="twelve columns navigation" role="navigation" id="nav">
             <ul class="main-menu">
               <li>
@@ -51,13 +51,17 @@
               </li>
               <li>
                 <a href="../start-a-club/start-a-club.htm">Start a club</a>
-              </li>
-              <li >
+              </li>            
+              <li>
                 <a href="../faq/faq.htm">FAQ</a>
               </li>
-
-
               <li>
+                <a href="../support-us/support-us.htm">Support Us</a>
+              </li>
+<li>
+			<a href="../teacherTraining/teacherTraining.htm">Teacher Training</a>
+              </li>
+              <li class="active">
                 <a href="../contact/contact-us.htm">Contact Us</a>
               </li>
             </ul>
@@ -91,61 +95,73 @@
       </div>
     </div>
 <div class="row">
-  <div class="eight columns">
-    <h2>Support Code Club World</h2>
+  <div class="eleven columns">
+    <h2>Contact Code Club Kenya</h2>
+    <p>If you have any questions related to Code Club Kenya, please fill out this form to get in contact with our staff. We will do our best to respond to your email as soon as possible.</p>
+<!--<div class="row"><hr></div>-->
+    <div class="panel" id="register">
+        <form action="mailer.php" method="post" novalidate>
 
-    <p><strong>It is our core belief that every child should have the chance to learn to code no matter what their financial situation, this is the reason that Code Club World is free and open.</strong></p>
-    <p>Code Club World is a not for profit organisation funded by donations from the public. We'll use funding to create more materials for you to teach with and create a team that support those that lead Code Club communities in their own countries.</p>
+     <!--   <div class="row">
+          <div class="twelve columns">
+            <h3>Register your Kenyan Code Club and join the movement!</h3>
+          </div>
+        </div>-->
+
+        <div class="row">
+          <div class="nine columns">
+            <div class="row">
+
+              <div class="nine columns">
+                <div class="custom-placeholder required">
+                  <label for="name">Your name</label>
+                  <input class="medium input-text" type="text" name="name" id="name" data-trigger="change" required="required">
+                </div>
+
+                <div class="custom-placeholder required">
+                  <label for="email">Your email address</label>
+                  <input class="medium input-text input-email" type="email" name="email" id="email" data-trigger="change" required="required">
+                </div>
+
+                <p class="mini-notice">Your name and email address will not be shared with any third party</p>
+
+                <div class="custom-placeholder">
+                  <label for="subject">Subject</label>
+                  <input class="subjectInput" type="text" name="subject" id="subject">
+                </div>
+
+                <div class="custom-placeholder required">
+                  <label for="subject">Message</label>
+                  <textarea class="messageInput" name="message" id="message" data-trigger="change" required="required"></textarea>
+                  
+                </div>
+
+                <label id="terms-and-conditions">
+                  <input type="checkbox" name="contact[agreed]" value="1" required="required" data-error-message="You must agree to the terms and conditions to continue.">
+                  <strong>I have read and agreed to the <a href="http://codeclub-assets.s3.amazonaws.com/public/CodeClubWorld-Terms-of-Service-v1-clean.pdf">terms and conditions</a></strong>
+                </label>
+                <button type="submit" class="button primary round" id="create-a-club" onclick="submit();">Submit</button>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="three columns">
+            <p><strong>Before you submit this form</strong></p>
+            <p>Please ensure you have visited our <a href="../faq/faq.htm">FAQ</a> page to check we have not already answered your question</p>
+
+            <img src="../img/robots/giddy.png" class="giddy" />
+          </div>
+        </div>
+
+      </form>
+    </div>
+
   </div>
 </div>
-
-
-        <div class="slice donate">
-  <div class="boxes row">
-      <form accept-charset="UTF-8" action="/charges" class="three columns morepanel stripe-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="rmFKjEyQGPqgTJBfb296u3L226RlcqrZIoL7eUNrIJA=" /></div>
-  <div class="wrap">
-    <p><img alt="1child" height="142" src="../img/robots/support-robot-one.jpg" width="224" /></p>
-
-   
-<a class="button round primary" href="https://gocardless.com/pay/R5075AHN" target="_blank">Donate</a>
-  </div>
-</form>
-
-      <form accept-charset="UTF-8" action="/charges" class="three columns morepanel stripe-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="rmFKjEyQGPqgTJBfb296u3L226RlcqrZIoL7eUNrIJA=" /></div>
-  <div class="wrap">
-    <p><img src="../img/robots/support-robot-three.jpg" height="142" width="224" /></p>
-
-    
-<a class="button round primary" href="https://gocardless.com/pay/2TC9BCMR" target="_blank">Donate</a>
-
-  </div>
-</form>
-
-      <form accept-charset="UTF-8" action="/charges" class="three columns morepanel stripe-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="rmFKjEyQGPqgTJBfb296u3L226RlcqrZIoL7eUNrIJA=" /></div>
-  <div class="wrap">
-    <p><img src="../img/robots/support-robot-lots.jpg" width="224" height="142" height="142" width="224" /></p>
-
-   
-    <a class="button round primary" href="https://gocardless.com/pay/2M8XAYWR" target="_blank">Donate</a>
-
-  </div>
-</form>
-
-      <form accept-charset="UTF-8" action="/charges" class="three columns morepanel stripe-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="rmFKjEyQGPqgTJBfb296u3L226RlcqrZIoL7eUNrIJA=" /></div>
-  <div class="wrap">
-    <p><img height="142" src="../img/robots/support-robot-any-amount.jpg"  width="224" /></p>
-
-    <strong>
-        any amount <input id="amount" name="amount" type="text" />
-    </strong>
-
-    <a class="button round primary" href="https://gocardless.com/pay/Y1NN3GVC" target="_blank">Donate</a>
-
-  </div>
-</form>
-
-  </div>
-</div>
+<p>
+  <br>
 
 
   <footer class="footer" role="contentinfo">
@@ -199,7 +215,7 @@
           <div class="row">
             <div class="twelve columns">
               <div class="wrap">
-                <a href="https://twitter.com/CodeClubKEAus" class="social-link">
+                <a href="https://twitter.com/CodeClubKE" class="social-link">
                   <img alt="Twitter" height="35" src="http://www.codeclub.org.uk/system/files/032013/514af7939d200f0f4000001a/icon/twitter.png" width="35"> Twitter
                 </a><!--
                 <a href="https://www.facebook.com/CodeClubHK" class="social-link">
@@ -232,8 +248,13 @@
 
       <div class="row">
         <p class="legal">
-          Code Club Kenya aim at giving children the chance to learn to code.We are very good friends with Code Club World however please note that we are entirely separate entities and not legally or formally affiliated in any way.<br>
+          Code Club Kenya is part of <a href="http://codeclubworld.org/" target="_blank">Code Club World</a> Ltd - a not-for-profit organisation with the aim of giving children the chance to learn to code.<br>
+          Registered UK Company No. 08140247 &copy; 2013<br>
+          CodeClubKE is proudly built by <a href="http://www.vivant.com.au">Vivant</a>, in support of bringing proper development resources to students all around Kenya.<br>
           Illustrations by <a href="http://www.timothywinchester.com/">Timothy Winchester</a> and used with his kind permission.
+          Code Club World site built by <a href="http://withassociates.com">With Associates</a>.
+          API built by Phil Howell</a>.
+          Powered by <a href="https://github.com/himynamesdave/codeclubhk">Github</a>.
         </p>
       </div>
     </footer>
