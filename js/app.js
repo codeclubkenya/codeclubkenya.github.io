@@ -3,17 +3,32 @@
 window.CodeClubWorld = {};
 
 CodeClubWorld.api   = 'https://api.codeclubworld.org';
-CodeClubWorld.token = 'ZTA0YjgyMTZmODljODJhNzA4MzdlYWEyYTY2NGRkNTk=';
-CodeClubWorld.limit = 10000;
+
+// Tian
+CodeClubWorld.country_code = 'KE';
+
+// Tian
+// CodeClubWorld.token = //'ZTA0YjgyMTZmODljODJhNzA4MzdlYWEyYTY2NGRkNTk=';
+
+// Tian
+CodeClubWorld.api_token = '50357bd37bba61f09c1b3ffe1031391d27b6533431d1cdb9e40d10e7f0c3738b';
+
+// Tian:
+CodeClubWorld.api_version = '2';
 
 CodeClubWorld.makeMap = function() {
   var el = document.getElementById('map');
   if (!el) return;
 
-  var url = CodeClubWorld.api + '/clubs?limit=' + CodeClubWorld.limit;
+// Tian
+  //var url = CodeClubWorld.api + '/clubs?limit=' + CodeClubWorld.limit;
+
+// Tian
+  var url = CodeClubWorld.api + '/clubs?in_country=' + CodeClubWorld.country_code;
 
   $.getJSON(url).then(function(data) {
-    var clubs = data.clubs,
+    //var clubs = data.clubs,
+    var clubs = data,
         markers = [];
 
     var map = new google.maps.Map(el, {
@@ -23,17 +38,8 @@ CodeClubWorld.makeMap = function() {
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
-      var keClubsCounter = 0;
-
     $.each(clubs, function(i, club) {
       var loc = club.venue.location;
-
-// retrieving the number of clubs in Kenya does not work
-        //var countryCode = club.venue.country.code;
-
-        //if (countryCode == 'KE') {
-        //    keClubsCounter++;
-      //  }
 
       if (!loc) return;
 
@@ -92,8 +98,6 @@ CodeClubWorld.makeMap = function() {
       });
     });
 
-    // keClubsCounter does not work, so use the normal one
-    //$('.counter').text(keClubsCounter);
 	$('.counter').append(clubs.length);
 
     var mcOptions = {
